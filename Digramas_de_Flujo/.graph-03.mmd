@@ -7,6 +7,7 @@ graph TD
     VarIngreso --> InputMulta[/"Tiene una multa? [S/N]"/]@{ shape: display }
     InputMulta --> VarMultaAns[/multaAns/]
     VarMultaAns --> CheckMultaAns{"multaAns = 's'"}
+
     CheckMultaAns -- TRUE --> VarMulta1(multa = true)
     CheckMultaAns -- FALSE --> CheckMultaAns2{multaAns = 'n'}
     CheckMultaAns2 -- TRUE --> VarMulta2(multa = false)
@@ -38,9 +39,9 @@ graph TD
     arb6 --> CheckMulta
 
     CheckMulta{multa}
-    CheckMulta -- TRUE --> MultaPago(arbitro = arbitro * 2)
-    CheckMulta -- FALSE --> OutPago
-    MultaPago --> OutPago
+        CheckMulta -- TRUE --> MultaPago(arbitro = arbitro * 2)
+            MultaPago --> OutPago
+        CheckMulta -- FALSE --> OutPago
 
     OutPago[/"Su pago sera de {arbitro}"/]
     OutPago --> END([FIN])

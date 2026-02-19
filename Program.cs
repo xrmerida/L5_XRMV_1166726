@@ -39,7 +39,49 @@ static void Ejercicio02 () {
         Console.WriteLine("No es bisiesto");
     }
 }
-static void Ejercicio03 () { } 
+static void Ejercicio03 () {
+    int salario,
+        arbitro = 0;
+    string esMultadoStr;
+    bool esMultado = false;
+    Console.Write("Ingresar su salario mensual: ");
+    salario = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Tiene alguna multa [S/N]: ");
+    esMultadoStr = Console.ReadLine();
+
+    if (esMultadoStr == "s" || esMultadoStr == "S") {
+        esMultado = true;
+    } else if (esMultadoStr == "n" || esMultadoStr == "N") {
+        esMultado = false;
+    } else {
+        Console.WriteLine($"ERROR: \"{esMultadoStr}\" es invalido");
+        Environment.Exit(1);
+    }
+
+    if (salario > 12000) {
+        arbitro = 150;
+    } else if (salario > 9000) {
+        arbitro = 100;
+    } else if (salario > 6000) {
+        arbitro = 75;
+    } else if (salario > 3000) {
+        arbitro = 50;
+    } else if (salario > 1000) {
+        arbitro = 15;
+    } else if (salario > 500) {
+        arbitro = 10;
+    } else {
+        Console.WriteLine("Salario Invalido");
+        Environment.Exit(1);
+    }
+    
+    if (esMultado) {
+        arbitro *= 2;
+    }
+
+    Console.WriteLine($"Su pago sera de {arbitro}");
+
+} 
 static void Ejercicio04 () {
     int cobro,
         pago,
