@@ -29,7 +29,16 @@ static void Ejercicio01 () {
         Console.WriteLine("El numero es Negativo");
     }
 }
-static void Ejercicio02 () { }
+static void Ejercicio02 () {
+    int year;
+    Console.Write("Ingrese un año: ");
+    year = Convert.ToInt32(Console.ReadLine());
+    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+        Console.WriteLine("Es bisiesto");
+    } else {
+        Console.WriteLine("No es bisiesto");
+    }
+}
 static void Ejercicio03 () { } 
 static void Ejercicio04 () {
     int cobro,
