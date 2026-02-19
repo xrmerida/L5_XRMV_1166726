@@ -90,7 +90,7 @@ static void Ejercicio04 () {
 
     Console.Write("Ingrese el tiempo de su estadia en horas: ");
     cobro = 10 * Convert.ToInt32(Console.ReadLine());
-    Console.Write($"Debe pagar {cobro}. \nIngrese el/los billete/s: ");
+    Console.Write($"Debe pagar {cobro}\nIngrese el/los billete/s: ");
     pago = Convert.ToInt32(Console.ReadLine());
 
     if (pago < cobro) {
