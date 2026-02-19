@@ -80,8 +80,8 @@ static void Ejercicio03 () {
     }
 
     Console.WriteLine($"Su pago sera de {arbitro}");
-
 } 
+
 static void Ejercicio04 () {
     int cobro,
         pago,
@@ -95,6 +95,7 @@ static void Ejercicio04 () {
 
     if (pago < cobro) {
         Console.WriteLine("ERROR: El pago es incompleto");
+        Environment.Exit(1);
     } else if (pago == cobro) {
         Console.WriteLine("Pago completado, sin cambio");
     } else {
