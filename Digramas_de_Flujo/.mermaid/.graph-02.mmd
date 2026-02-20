@@ -6,7 +6,7 @@ graph TB
     askYear --> varYear[/year/]
     varYear --> checkYear
 
-    checkYear{"(year % 4 == 0
+    checkYear{"(year % 4 = 0
     & year % 100 != 0)
     | year % 400 = 0"}
         checkYear -- TRUE --> outYes

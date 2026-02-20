@@ -6,7 +6,7 @@ graph TB
     outHoras --> varHoras[/horas/]
     varHoras --> varCobro(cobro = horas * 10)
     varCobro --> outCobro["Debe pagar {cobro}
-    Ingrese el/los billete/s "]
+    Ingrese el/los billete/s "]@{shape: display}
     outCobro --> varPago[/pago/]
 
     varPago --> checkPago{pago < cobro}
