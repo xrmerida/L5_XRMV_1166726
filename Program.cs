@@ -29,6 +29,7 @@ static void Ejercicio01 () {
         Console.WriteLine("El numero es Negativo");
     }
 }
+
 static void Ejercicio02 () {
     int year;
     Console.Write("Ingrese un año: ");
@@ -39,6 +40,7 @@ static void Ejercicio02 () {
         Console.WriteLine("No es bisiesto");
     }
 }
+
 static void Ejercicio03 () {
     int salario,
         arbitro = 0;
