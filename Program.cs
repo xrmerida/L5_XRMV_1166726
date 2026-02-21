@@ -108,30 +108,30 @@ static void Ejercicio04 () {
         if (cambio >= 100) {
             cambioDisplay = cambio / 100;
             cambio %= 100;
-            Console.WriteLine($"{cambioDisplay} billete/s de 100"); 
+            Console.WriteLine($"  {cambioDisplay} billete/s de Q.100"); 
         }
         if (cambio >= 50) {
             cambioDisplay = cambio / 50;
             cambio %= 50;
-            Console.WriteLine($"{cambioDisplay} billete/s de 50"); 
+            Console.WriteLine($"  {cambioDisplay} billete/s de Q.50"); 
         }
         if (cambio >= 20) {
             cambioDisplay = cambio / 20;
             cambio %= 20;
-            Console.WriteLine($"{cambioDisplay} billete/s de 20"); 
+            Console.WriteLine($"  {cambioDisplay} billete/s de Q.20"); 
         }
         if (cambio >= 10) {
             cambioDisplay = cambio / 10;
             cambio %= 10;
-            Console.WriteLine($"{cambioDisplay} billete/s de 10"); 
+            Console.WriteLine($"  {cambioDisplay} billete/s de Q.10"); 
         }
         if (cambio >= 5) {
             cambioDisplay = cambio / 5;
             cambio %= 5;
-            Console.WriteLine($"{cambioDisplay} billete/s de 5"); 
+            Console.WriteLine($"  {cambioDisplay} billete/s de Q.5"); 
         }
         if (cambio >= 1) {
-            Console.WriteLine($"{cambio} billete/s de 1"); 
+            Console.WriteLine($"  {cambio} billete/s de Q.1"); 
         }
     }
 }
